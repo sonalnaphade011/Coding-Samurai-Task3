@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  font-family: var(--font1);
+  height: 74px;
+  background-color: rgb(150, 218, 218);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.nav-right {
+  margin-right: 200px;
+}
+.nav-left {
+  font-size: 25px;
+  display: flex;
+  font-weight: 700;
+  margin-left: 140px;
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 18px;
+}
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+}
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+.content {
+  height: 395px;
+  /* background-color: rgb(189, 164, 226); */
+  display: flex;
+}
+.content-left {
+  font-family: var(--font1);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-right img {
+  width: 350px;
+  height: 355px;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+.write-blog {
+  padding: 20px;
+  margin-left: 125px;
+}
+.start {
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(45deg, black, #636363, black, black, transparent);
+  border: none;
+  border-radius: 10px;
+  margin-left: -104px;
+}
+.start a {
+  text-decoration: none;
+  color: #fff;
+}
+.start-1 {
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(45deg, black, #636363, black, black, transparent);
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.start-1 a {
+  text-decoration: none;
+  color: #fff;
+}
+.home-articles {
+  height: 455px;
+  padding-top: 15px;
+}
+.home-articles h2 {
+  background-color: rgb(209 194 194);
+  padding: 5px;
+}
+.home-articles h1 {
+  color: darkgreen;
+}
+
+.home-article {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.home-article img {
+  width: 300px;
+ 
+}
+.home-article-content {
+  padding: 0 25px;
+}
+.home-article-content a {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+.footer {
+  height: 50px;
+  background-color: rgb(83, 19, 19);
+  color: #fff;
+  display: flex;
+  margin-top: 303vh;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+/* Blog Page */
+.blog-content {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-content h1 {
+  margin-top: 20px;
+  font-family: var(--font1);
+}
+
+.blog-space {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/bgimg3.png");
+  background-size: cover;
+}
+.blog-box {
+  padding: 10px;
+}
+.blog-box input {
+  padding: 10px;
+  width: 50vw;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.blog-box textarea {
+  padding: 10px;
+  width: 60vw;
+  height: 50vh;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* About Us */
+#about {
+  padding: 5vw;
+  text-align: center;
+  font-size: 20px;
+  font-family: var(--font1);
+}
+#about h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--font2);
+}
+#about .about-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+#about .about-box img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+#about .about-box img:hover {
+  border-radius: 50%;
+}
+
+#about .about-box .profile {
+  font-size: 20px;
+  background: #c4c4c4;
+  padding: 30px 10px;
+}
+.profile h6 {
+  font-size: 25px;
+}
+#about .about-box .profile .pro-links {
+  margin-top: 15px;
+}
+#about .about-box .profile .pro-links a img {
+  height: 50px;
+  padding: 10px 15px;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#about .about-box .profile .pro-links a img:hover {
+  background: rgb(21, 21, 100);
+  color: #fff;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+}
+.about-footer {
+  height: 50px;
+  width: 100vw;
+  padding: 30px;
+  background-color: rgb(83, 19, 19);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Blogpost Page */
+.post-img {
+  margin-top: 10px;
+  height: 450px;
+  overflow: hidden;
+}
+.post-img h1 {
+  text-align: center;
+  font-family: var(--font2);
+}
+.post-img img {
+  width: 100%;
+  height: 514px;
+}
+.share-post {
+  text-align: end;
+}
+.share-post a img {
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 15px;
+}
+.share-post a img:hover {
+  color: #fff;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+}
+.blogpost-content {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: var(--font1);
+}
+.blogpost-content p b {
+  padding-top: 20px;
+  text-decoration: underline;
+}
+.Blog-footer {
+  height: 50px;
+  background-color: rgb(83, 19, 19);
+  color: #fff;
+  display: flex;
+  margin-top: 280vh;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+/* Contact page */
+.one {
+  height: 700px;
+}
+.contactform {
+  font-family: sans-serif;
+  padding: 0 444px;
+  padding-top: 54px;
+  height: 780px;
+  color: white;
+  background-color: rgb(24 22 47);
+}
+.contactform fieldset {
+  border-width: 5px;
+  padding: 50px 50px;
+  margin-right: 80px;
+}
+
+.contactform h1 {
+  font-family: initial;
+}
+.contactform form div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contactform form div input {
+  width: 26vw;
+  border-radius: 5px;
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+#emailHelp {
+  font-size: 11px;
+  color: #898989;
+  margin: 0 5px;
+  padding: 3px 0 0 0;
+}
+
+#form-check {
+  flex-direction: row;
+}
+
+#form-check input {
+  width: 24px;
+  margin: 3px 4px;
+}
+form .sub-btn {
+  background: #3b1836;
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 6px;
+  margin: 10px 0;
+}
+.contact-footer {
+  height: 50px;
+  background-color: rgb(83, 19, 19);
+  color: #fff;
+  display: flex;
+  margin-top: 10vh;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
